@@ -19,7 +19,7 @@ Proyecto LoginLogout Multicapa POO - DWES Tema 5
 ## Funcionalidades
 
 ## Entorno de Desarrollo
-   - [Entorno de Desarrollo](http://daw212.isauces.local/212DWESLoginLogoutMulticapaPOO/indexLoginLogoutMulticapaPOO.php)
+   - [Entorno de Desarrollo](http://daw212.isauces.local/212DWESLoginLogoutMulticapaPOO/index.php)
 
 ## Entorno de Explotación
-   - [Entorno de Explotación](https://daw212.ieslossauces.es/212DWESLoginLogoutMulticapaPOO/indexLoginLogoutMulticapaPOO.php)
+   - [Entorno de Explotación](https://daw212.ieslossauces.es/212DWESLoginLogoutMulticapaPOO/index.php)

@@ -21,7 +21,7 @@
     </div>
     <div class="row">
         <div class="col text-center">
-            <form method="post" action="indexLoginLogoutMulticapaPOO.php">
+            <form method="post" action="index.php">
                 <button class="btn btn-secondary" type="submit" name="login">Login</button>
             </form>
         </div>
