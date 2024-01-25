@@ -1,0 +1,5 @@
+Options -Indexes
+DirectoryIndex indexLoginLogoutMulticapaPOO.php index.php index.html
+ErrorDocument 403 /212DWESLoginLogoutMulticapaPOO/errors/403.html
+ErrorDocument 404 /212DWESLoginLogoutMulticapaPOO/errors/404.html
+Redirect 301 /google https://www.google.es
