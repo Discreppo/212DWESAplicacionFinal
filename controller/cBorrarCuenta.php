@@ -21,7 +21,7 @@ if (isset($_REQUEST['eliminarUsuario'])) { // Comprobamos que el usuario a pulsa
     if (UsuarioPDO::borrarUsuario($oUsuarioAEliminar)) {
         session_destroy(); // Elimino la sesión
         $_SESSION['paginaEnCurso'] = 'inicioPublico'; // Asigno a la pagina en curso la pagina de inicioPublico
-        header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
+        header('Location: index.php'); // Redirecciono al index de la APP
         exit;
     }
 }
