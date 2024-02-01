@@ -1,6 +1,4 @@
-# Proyecto DWES - Tema 5
-## Autor Original
-Carlos García Cachón
+# Proyecto DWES - Aplicación Final
 ## Autor
 Oscar Pascual Ferrero
 ## Requisitos
@@ -14,12 +12,12 @@ Oscar Pascual Ferrero
    - XSL 1.1.34
    - ZIP 1.19.5
 ## Descripción
-Proyecto LoginLogout Multicapa POO - DWES Tema 5
+Aplicación Final Multicapa POO - DWES 
 
 ## Funcionalidades
 
 ## Entorno de Desarrollo
-   - [Entorno de Desarrollo](http://daw212.isauces.local/212DWESLoginLogoutMulticapaPOO/index.php)
+   - [Entorno de Desarrollo](http://daw212.isauces.local/212DWESAplicacionFinal/index.php)
 
 ## Entorno de Explotación
-   - [Entorno de Explotación](https://daw212.ieslossauces.es/212DWESLoginLogoutMulticapaPOO/index.php)
+   - [Entorno de Explotación](https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php)

@@ -43,18 +43,26 @@
             <div class="row text-center">
                 <div class="footer-item">
                     <address>© <a href="../../index.html" target="_blank" style="color: white; text-decoration: none; background-color: lightgray">Oscar Pascual Ferrero</a>
-                        IES LOS SAUCES 2023-24 </address>
+                        IES LOS SAUCES 2023-24 
+                        <a href="doc/index.html" target="_blank" style="color: white; text-decoration: none; background-color: lightgray">PHPDoc</a>
+                        <a href="doc/cv.pdf" target="_blank" style="color: white; text-decoration: none; background-color: lightgray">CV</a>
+                        <a href="https://www.google.es" target="_blank" style="color: white; text-decoration: none; background-color: lightgray">Web a imitar</a>
+                        <a href="./webroot/rss.xml" target="_blank" style="color: white; text-decoration: none; background-color: lightgray">RSS</a>
+                    </address>
                 </div>
                 <div class="footer-item">
                     <form method="post" action="index.php">
-                        <!--
                         <button type="submit" name="tecnologias" value="tecnologias" class="tecnologias">Tecnologias</button>
-                        -->
                     </form>
                 </div>
                 <div class="footer-item">
-                    <a href="https://github.com/Discreppo/212DWESAplicacionFinal.git" target="_blank"><img
-                            src="webroot/media/images/github.png" alt="LogoGitHub" /></a>
+                    <address><a href="https://github.com/Discreppo/212DWESAplicacionFinal.git" target="_blank"><img
+                                src="webroot/media/images/github.png" alt="LogoGitHub" /></a>
+                        
+                    </address>
+                </div>
+                <div class="footer-item">
+
                 </div>
             </div>
         </footer>

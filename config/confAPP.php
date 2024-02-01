@@ -18,6 +18,7 @@ require_once 'model/ErrorApp.php';
 require_once 'model/Usuario.php';
 require_once 'model/UsuarioDB.php';
 require_once 'model/UsuarioPDO.php';
+require_once 'model/REST.php';
 
 // Creamos dos 'arrays' para indicar el 'path' de los archivos del controlador y la vista
 $aController = [
@@ -32,7 +33,8 @@ $aController = [
     'wip' => 'controller/cWIP.php',
     'tecnologias' => 'controller/cTecnologias.php',
     'error' => 'controller/cError.php',
-    'cambiarContraseña' => 'controller/cCambiarPassword.php'
+    'cambiarContraseña' => 'controller/cCambiarPassword.php',
+    'apiREST' => 'controller/cREST.php'
 ];
 
 // En el array de '$aView' almacenamos un array por idioma, para mostrar la vista en el idioma elegído por el usuario
@@ -50,7 +52,9 @@ $aView = [
         'wip' => 'view/SP/vWIP.php',
         'tecnologias' => 'view/SP/vTecnologias.php',
         'error' => 'view/SP/vError.php',
-        'cambiarContraseña' => 'view/SP/vCambiarPassword.php'
+        'cambiarContraseña' => 'view/SP/vCambiarPassword.php',
+        'apiREST' => 'view/SP/vREST.php'
+
     ],
     'UK' => [
         'layout' => 'view/UK/layout.php',
@@ -65,7 +69,8 @@ $aView = [
         'wip' => 'view/UK/vWIP.php',
         'tecnologias' => 'view/SP/vTecnologias.php',
         'error' => 'view/UK/vError.php',
-        'cambiarContraseña' => 'view/UK/vCambiarPassword.php'
+        'cambiarContraseña' => 'view/UK/vCambiarPassword.php',
+        'apiREST' => 'view/SP/vREST.php'
     ]
 ];
 
@@ -81,7 +86,8 @@ $aTitleLang = [
         'wip' => 'Zona En Construcción',
         'tecnologias' => 'Tecnologias',
         'error' => 'Error',
-        'cambiarContraseña' => 'Cambiar Contraseña'
+        'cambiarContraseña' => 'Cambiar Contraseña',
+        'apiREST' => 'REST'
     ],
     'UK' => [
         'inicioPublico' => 'Public Home',
@@ -94,6 +100,7 @@ $aTitleLang = [
         'wip' => 'Work in Progress',
         'tecnologias' => 'Tecnologies',
         'error' => 'Error',
-        'cambiarContraseña' => 'Change Password'
+        'cambiarContraseña' => 'Change Password',
+        'apiREST' => 'REST'
     ]
 ];

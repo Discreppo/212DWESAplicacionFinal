@@ -24,14 +24,24 @@
     <div class="container">       
         <section class="carousel">
             <a href="#"></a>
+            <a href="./webroot/pdf/catalogoDeRequisitos.pdf" target="_blank"></a>
+            <a href="#"></a>
+            <a href="./webroot/pdf/230129EstandarDesarrolloDAWyEstructuraAlmacenamientoDWES.pdf" target="_blank"></a>
+            <a href="#"></a>
+            <a href="#"></a>
             <a href="#"></a>
             <a href="#"></a>
             <a href="#"></a>
             <main class="fotos">
-                <img src="doc/esquemaApp.PNG" alt="">
-                <img src="doc/archivosApp.jpg" alt="">
-                <img src="doc/modelo.png" alt="">
-                <img src="doc/wip.png" alt="">
+                <img src="doc/arbolDeNavegacion.jpg" alt="">
+                <img src="doc/catalogoDeRequisitos.jpg" alt="">
+                <img src="doc/230129DiagramaDeCasosDeUso.jpg" alt="">
+                <img src="doc/230129EstandarDesarrolloDAWyEstructuraAlmacenamientoDWES.jpg" alt="">
+                <img src="doc/230131RelacionDeFicheros.jpg" alt="">
+                <img src="doc/230129UsoDeLaSessionParaLaAplicacion.jpg" alt="">
+                <img src="doc/InstruccionesAPI.jpg" alt="">
+                <img src="doc/ModeloFisicoDeDatos.jpg" alt="">
+                <img src="doc/DiagramaDeClases.jpg" alt="">
             </main>
 
         </section>

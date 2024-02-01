@@ -1,8 +1,9 @@
 <?php
 /**
- * @author Carlos García Cachón
+ * @author original Carlos García Cachón
+ * @author Oscar Pascual Ferrero
  * @version 1.0
- * @since 03/01/2024
+ * @since 15/01/2024
  * @copyright Todos los derechos reservados a Carlos García
  * 
  * @Annotation Proyecto LoginLogoutMulticapaPOO - Interfaz DB
