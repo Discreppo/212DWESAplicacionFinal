@@ -14,11 +14,6 @@
             </form>
         </div>
     </div>
-    <div class="row mb-5">
-        <div class="col text-center">
-            <img src="doc/esquemaApp.PNG" class="img-fluid" alt="Mapeo de la Aplicación">
-        </div>
-    </div>
     <div class="row">
         <div class="col text-center">
             <form method="post" action="index.php">
@@ -26,4 +21,20 @@
             </form>
         </div>
     </div>
+    <div class="container">       
+        <section class="carousel">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <main class="fotos">
+                <img src="doc/esquemaApp.PNG" alt="">
+                <img src="doc/archivosApp.jpg" alt="">
+                <img src="doc/modelo.png" alt="">
+                <img src="doc/wip.png" alt="">
+            </main>
+
+        </section>
+    </div>    
+    
 </div>
