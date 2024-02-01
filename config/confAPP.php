@@ -30,6 +30,7 @@ $aController = [
     'miCuenta' => 'controller/cMiCuenta.php',
     'borrarCuenta' => 'controller/cBorrarCuenta.php',
     'wip' => 'controller/cWIP.php',
+    'tecnologias' => 'controller/cTecnologias.php',
     'error' => 'controller/cError.php',
     'cambiarContraseña' => 'controller/cCambiarPassword.php'
 ];
@@ -47,6 +48,7 @@ $aView = [
         'miCuenta' => 'view/SP/vMiCuenta.php',
         'borrarCuenta' => 'view/SP/vBorrarCuenta.php',
         'wip' => 'view/SP/vWIP.php',
+        'tecnologias' => 'view/SP/vTecnologias.php',
         'error' => 'view/SP/vError.php',
         'cambiarContraseña' => 'view/SP/vCambiarPassword.php'
     ],
@@ -61,6 +63,7 @@ $aView = [
         'miCuenta' => 'view/UK/vMiCuenta.php',
         'borrarCuenta' => 'view/UK/vBorrarCuenta.php',
         'wip' => 'view/UK/vWIP.php',
+        'tecnologias' => 'view/SP/vTecnologias.php',
         'error' => 'view/UK/vError.php',
         'cambiarContraseña' => 'view/UK/vCambiarPassword.php'
     ]
@@ -76,6 +79,7 @@ $aTitleLang = [
         'miCuenta' => 'Mi Cuenta',
         'borrarCuenta' => 'Borrar Cuenta',
         'wip' => 'Zona En Construcción',
+        'tecnologias' => 'Tecnologias',
         'error' => 'Error',
         'cambiarContraseña' => 'Cambiar Contraseña'
     ],
@@ -88,6 +92,7 @@ $aTitleLang = [
         'miCuenta' => 'My Account',
         'borrarCuenta' => 'Delete Account',
         'wip' => 'Work in Progress',
+        'tecnologias' => 'Tecnologies',
         'error' => 'Error',
         'cambiarContraseña' => 'Change Password'
     ]

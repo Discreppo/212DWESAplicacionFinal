@@ -47,7 +47,9 @@
                 </div>
                 <div class="footer-item">
                     <form method="post" action="index.php">
-                        <button class="btn btn-secondary" type="submit" name="salirDelError">Tecnologias</button>
+                        <!--
+                        <button type="submit" name="tecnologias" value="tecnologias" class="tecnologias">Tecnologias</button>
+                        -->
                     </form>
                 </div>
                 <div class="footer-item">

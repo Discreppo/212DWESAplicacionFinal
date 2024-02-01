@@ -99,3 +99,69 @@ footer {
 .footer-item {
     width: 33.33%;
 }
+
+img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 98vw;
+            height: 98vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        .carousel {
+            width: 1000px;
+            height: 600px;
+            position: relative;
+            outline: 1px solid black;
+            overflow: hidden;
+        }
+
+        .fotos {
+            display: flex;
+            width: 2400px;
+            position: relative;
+            transition: all 1s ease;
+        }
+
+        .carousel a{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            position: absolute;
+            left: 380px;
+            bottom: 20%;        
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: mediumspringgreen;
+            z-index: 10;
+        }
+
+        .carousel a:nth-child(2){
+            left: 450px;
+        }
+        .carousel a:nth-child(3){
+            left: 520px;
+        }
+        .carousel a:nth-child(4){
+            left: 590px;
+        }
+
+        .carousel a:focus-within {
+            background: brown;
+        }
+
+        .carousel a:nth-child(2):focus-within ~ .fotos {
+            transform: translateX(-1000px);
+        }
+        .carousel a:nth-child(3):focus-within ~ .fotos {
+            transform: translateX(-2000px);
+        }
+        .carousel a:nth-child(4):focus-within ~ .fotos {
+            transform: translateX(-3000px);
+        }
