@@ -2,12 +2,12 @@
 <rss version="2.0">
     <channel>
         <language>es-ES</language>
-        <title>Proyecto Final Aroa Granero Omañas</title>
-        <copyright>Aroa Granero Omañas</copyright>
-        <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
-        <description>Sitio Web de Aroa Granero Omañas de DWES</description>
-        <copyright>2022 Aroa Granero Omañas. All rights reserved.</copyright>
-        <lastBuildDate>Wed, 23 Feb 2022 08:30:00 +0100</lastBuildDate>
+        <title>Proyecto Final Oscar Pascual Ferrero</title>
+        <copyright>Oscar Pascual Ferrero</copyright>
+        <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
+        <description>Sitio Web de Oscar Pascual Ferrero de DWES</description>
+        <copyright>2024 Oscar Pascual Ferrero. All rights reserved.</copyright>
+        <lastBuildDate>Thu, 01 Feb 2024 10:46:32 +0100</lastBuildDate>
         <skipHours>
             <hour>0</hour>
             <hour>1</hour>
@@ -35,39 +35,39 @@
         </skipDays>
         <item>
             <title>Configuracion Cambiar Contraseña</title>
-            <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
+            <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
             <description>Se han realizad cambios en el editar usuario para que pueda cambiar su contraseña</description>
-            <pubDate>Fri, 28 Jan 2022</pubDate>
+            <pubDate>Fri, 28 Dec 2023</pubDate>
         </item>
         <item>
             <title>Configuracion API REST</title>
-            <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
+            <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
             <description>Añadido ficheros y configuracion para añadir API REST a la pagina web</description>
-            <pubDate>Mon, 31 Jan 2022</pubDate>
+            <pubDate>Mon, 31 Dec 2023</pubDate>
         </item>
         <item>
             <title>Configuracion de API REST</title>
-            <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
+            <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
             <description>Se ha realizado la configuracion de dos APIs REST, una para conversor de divisa y otra para consultar el tiempo de una provincia</description>
-            <pubDate>Thu, 3 Feb 2022</pubDate>
+            <pubDate>Thu, 3 Jan 2024</pubDate>
         </item>
         <item>
             <title>Configuracion de API REST Info</title>
-            <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
+            <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
             <description>Añadido Informacon Sobre las API Propia</description>
-            <pubDate>Wed, 16 Feb 2022</pubDate>
+            <pubDate>Wed, 16 Jan 2024</pubDate>
         </item>
         <item>
             <title>Creacion de MtoUsuarios con AJAX</title>
-            <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
+            <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
             <description>Se ha realizado el campo que permite buscar usuarios por descripcion de usuario y tambien se ha realizado la muestra de todos los usuarios automaticamente</description>
-            <pubDate>Tue, 18 Feb 2022</pubDate>
+            <pubDate>Tue, 18 Jan 2024</pubDate>
         </item>
          <item>
             <title>Creacion de MtoDepartamentos Busqueda Compleja y Paginacion</title>
-            <link>https://daw208.ieslossauces.es/208DWESProyectoFinal/index.php</link>
+            <link>https://daw212.ieslossauces.es/212DWESAplicacionFinal/index.php</link>
             <description>Se ha realizado el campo que permite buscar Departamentos por codigo de departameno,con busqueda por estado y paginacion de 3 departamentos</description>
-            <pubDate>Wed, 23 Feb 2022</pubDate>
+            <pubDate>Wed, 23 Jan 2024</pubDate>
         </item>
     </channel>
 </rss>
