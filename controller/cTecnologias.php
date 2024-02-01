@@ -11,8 +11,12 @@
  */
 
 // Si el usuario pulsa el botón 'Salir', mando al usuario a la página 'inicioPublico'
-if(isset($_REQUEST['salirDeTecnologias'])){ 
-    $_SESSION['paginaEnCurso'] = $_SESSION['paginaAnterior']; // Asigno a la página en curso la página "anterior"
+if(isset($_REQUEST['salirDeTecnologias'])){
+    if ($_SESSION['paginaAnterior'] != 'tecnologias') {
+        $_SESSION['paginaEnCurso'] = $_SESSION['paginaAnterior']; // Asigno a la pagina en curso la página anterior
+    } else {
+        $_SESSION['paginaEnCurso'] = 'inicioPublico'; // Asigno a la pagina en curso la página anterior
+    }
     header('Location: index.php'); // Redirecciono al index de la APP
     exit;
 }

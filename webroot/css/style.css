@@ -1,19 +1,19 @@
 /* RESPONSIVE LETRA DEL FOOTER */
 @media (max-width: 1200px) {
     footer {
-    font-size: 18px; /* Tamaño de fuente máximo para pantallas de hasta 1200px */
+        font-size: 18px; /* Tamaño de fuente máximo para pantallas de hasta 1200px */
     }
 }
 
 @media (max-width: 768px) {
     footer {
-    font-size: 16px; /* Tamaño de fuente máximo para pantallas de hasta 768px */
+        font-size: 16px; /* Tamaño de fuente máximo para pantallas de hasta 768px */
     }
 }
 
 @media (max-width: 576px) {
     footer {
-    font-size: 10px; /* Tamaño de fuente máximo para pantallas de hasta 576px */
+        font-size: 10px; /* Tamaño de fuente máximo para pantallas de hasta 576px */
     }
 }
 /* ESTRUCTURA */
@@ -49,8 +49,8 @@ main {
 }
 /* TABLAS Y FORMULARIO */
 legend {
-            background-color: #666;
-            color: white;
+    background-color: #666;
+    color: white;
 }
 table {
     width: 100%;
@@ -76,7 +76,7 @@ tr:nth-child(odd) {
 }
 
 .list-group-item {
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
     margin: 1%;
     border: none;
     color:#666;
@@ -101,67 +101,100 @@ footer {
 }
 
 img {
-            max-width: 100%;
-            display: block;
-        }
+    max-width: 100%;
+    display: block;
+}
 
-        .container {
-            width: 98vw;
-            height: 98vh;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-        }
+.container {
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 
-        .carousel {
-            width: 1000px;
-            height: 600px;
-            position: relative;
-            outline: 1px solid black;
-            overflow: hidden;
-        }
+.carousel {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    outline: 1px solid black;
+    overflow: hidden;
+}
 
-        .fotos {
-            display: flex;
-            width: 2400px;
-            position: relative;
-            transition: all 1s ease;
-        }
+.fotos {
+    display: flex;
+    width: 2400px;
+    position: relative;
+    transition: all 1s ease;
+}
 
-        .carousel a{
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            position: absolute;
-            left: 380px;
-            bottom: 20%;        
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: mediumspringgreen;
-            z-index: 10;
-        }
+.carousel a{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    left: 300px;
+    bottom: 20%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: mediumspringgreen;
+    z-index: 10;
+}
 
-        .carousel a:nth-child(2){
-            left: 450px;
-        }
-        .carousel a:nth-child(3){
-            left: 520px;
-        }
-        .carousel a:nth-child(4){
-            left: 590px;
-        }
+.carousel a:nth-child(2){
+    left: 350px;
+}
+.carousel a:nth-child(3){
+    left: 400px;
+}
+.carousel a:nth-child(4){
+    left: 450px;
+}
+.carousel a:nth-child(5){
+    left: 500px;
+}
+.carousel a:nth-child(6){
+    left: 550px;
+}
+.carousel a:nth-child(7){
+    left: 600px;
+}
+.carousel a:nth-child(8){
+    left: 650px;
+}
+.carousel a:nth-child(9){
+    left: 700px;
+}
+.carousel a:focus-within {
+    background: brown;
+}
 
-        .carousel a:focus-within {
-            background: brown;
-        }
-
-        .carousel a:nth-child(2):focus-within ~ .fotos {
-            transform: translateX(-1000px);
-        }
-        .carousel a:nth-child(3):focus-within ~ .fotos {
-            transform: translateX(-2000px);
-        }
-        .carousel a:nth-child(4):focus-within ~ .fotos {
-            transform: translateX(-3000px);
-        }
+.carousel a:nth-child(2):focus-within ~ .fotos {
+    transform: translateX(-1000px);
+}
+.carousel a:nth-child(3):focus-within ~ .fotos {
+    transform: translateX(-2000px);
+}
+.carousel a:nth-child(4):focus-within ~ .fotos {
+    transform: translateX(-3000px);
+}
+.carousel a:nth-child(5):focus-within ~ .fotos {
+    transform: translateX(-4000px);
+}
+.carousel a:nth-child(6):focus-within ~ .fotos {
+    transform: translateX(-5000px);
+}
+.carousel a:nth-child(7):focus-within ~ .fotos {
+    transform: translateX(-6000px);
+}
+.carousel a:nth-child(8):focus-within ~ .fotos {
+    transform: translateX(-7000px);
+}
+.carousel a:nth-child(9):focus-within ~ .fotos {
+    transform: translateX(-8000px);
+}
+.logos {
+    width: 50px;
+    height: auto;
+}
