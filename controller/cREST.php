@@ -22,7 +22,12 @@ if (isset($_REQUEST['salirREST'])) {
 $explicacion = null;
 $imagen = null;
 $title = null;
-if(!isset($_SESSION['fecha'])){
+$aNombre = [];
+$aDireccion = [];
+$aReseñas = [];
+$aPuntuacion = [];
+$mensaje = "";
+if (!isset($_SESSION['fecha'])) {
     $_SESSION['fecha'] = date("Y-m-d");
 }
 
@@ -39,9 +44,27 @@ if (isset($_REQUEST['nasa'])) {
     $title = $Nasa['title'];
 }
 
+if (isset($_REQUEST['negocio'])) {
+    if(!empty($_REQUEST['busqueda'])){
+    $negocio = REST::negocio($_REQUEST['busqueda']);
+    if(isset($negocio['message'])){
+        $mensaje = $negocio['message'];
+    }else{
+        for ($index = 0; $index < count($negocio['data']); $index++) {
+            if(!is_null($negocio['data'][$index]['name'])){
+            $aNombre[$index] = $negocio['data'][$index]['name'];
+            }
+            $aDireccion[$index] = $negocio['data'][$index]['address'];
+            $aReseñas[$index] = $negocio['data'][$index]['reviews_link'];
+            $aPuntuacion[$index] = $negocio['data'][$index]['rating'];
+        }
+    }
+    }
+}
+
+
 $_SESSION['paginaAnterior'] = 'inicioPrivado'; // Almaceno la página anterior para poder volver
 $_SESSION['paginaEnCurso'] = 'apiREST'; // Asigno a la página en curso la pagina de apiREST
-
 //header('Location: index.php'); // Redirecciono al index de la APP
 //exit;
 
