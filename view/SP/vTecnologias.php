@@ -17,7 +17,7 @@
             </div>
         </div>
     <section id="features">
-        <div class="container">
+        <div class="container" style="margin-bottom: 200px">
             <div class="row">
                 <div class="container">
                     <h3>Lado del cliente</h3>
