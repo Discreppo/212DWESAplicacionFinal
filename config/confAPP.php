@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author original Carlos García Cachón
  * @author Oscar Pascual Ferrero
@@ -10,7 +11,6 @@
  * 
  */
 require_once 'core/231018libreriaValidacion.php'; // Incluimos la librería de validación
-
 // Incluimos los archivos de la parte del MODELO
 require_once 'model/DB.php';
 require_once 'model/DBPDO.php';
@@ -19,6 +19,13 @@ require_once 'model/Usuario.php';
 require_once 'model/UsuarioDB.php';
 require_once 'model/UsuarioPDO.php';
 require_once 'model/REST.php';
+require_once 'model/Parcela.php';
+require_once 'model/ParcelaPDO.php';
+
+// Constantes para la busqueda de Mto.Departamento
+define("ESTADO_TODOS", 0);
+define("ESTADO_ALTAS", 1);
+define("ESTADO_BAJAS", 2);
 
 // Creamos dos 'arrays' para indicar el 'path' de los archivos del controlador y la vista
 $aController = [
@@ -34,7 +41,14 @@ $aController = [
     'tecnologias' => 'controller/cTecnologias.php',
     'error' => 'controller/cError.php',
     'cambiarContraseña' => 'controller/cCambiarPassword.php',
-    'apiREST' => 'controller/cREST.php'
+    'apiREST' => 'controller/cREST.php',
+    'consultarParcela' => 'controller/cMtoParcela.php',
+    'editarParcela' => 'controller/cConsultarModificarParcela.php',
+    'añadirParcela' => 'controller/cAltaParcela.php',
+    'eliminarParcela' => 'controller/cEliminarParcela.php',
+    'rehabilitacionParcela' => 'controller/cRehabilitacionParcela.php',
+    'bajaParcela' => 'controller/cBajaLogicaParcela.php',
+    'detalleParcela' => 'controller/cDetalleParcela.php'
 ];
 
 // En el array de '$aView' almacenamos un array por idioma, para mostrar la vista en el idioma elegído por el usuario
@@ -53,8 +67,12 @@ $aView = [
         'tecnologias' => 'view/SP/vTecnologias.php',
         'error' => 'view/SP/vError.php',
         'cambiarContraseña' => 'view/SP/vCambiarPassword.php',
-        'apiREST' => 'view/SP/vREST.php'
-
+        'apiREST' => 'view/SP/vREST.php', 
+        'consultarParcela' => 'view/SP/vMtoParcela.php',
+        'editarParcela' => 'view/SP/vConsultarModificarParcela.php',
+        'añadirParcela' => 'view/SP/vAltaParcela.php',
+        'eliminarParcela' => 'view/SP/vEliminarParcela.php',
+        'detalleParcela' => 'view/SP/vDetalleParcela.php'
     ],
     'UK' => [
         'layout' => 'view/UK/layout.php',
@@ -70,7 +88,12 @@ $aView = [
         'tecnologias' => 'view/SP/vTecnologias.php',
         'error' => 'view/UK/vError.php',
         'cambiarContraseña' => 'view/UK/vCambiarPassword.php',
-        'apiREST' => 'view/SP/vREST.php'
+        'apiREST' => 'view/SP/vREST.php', 
+        'consultarParcela' => 'view/SP/vMtoParcela.php',
+        'editarParcela' => 'view/SP/vConsultarModificarParcela.php',
+        'añadirParcela' => 'view/SP/vAltaParcela.php',
+        'eliminarParcela' => 'view/SP/vEliminarParcela.php',
+        'detalleParcela' => 'view/SP/vDetalleParcela.php'
     ]
 ];
 
@@ -87,7 +110,8 @@ $aTitleLang = [
         'tecnologias' => 'Tecnologias',
         'error' => 'Error',
         'cambiarContraseña' => 'Cambiar Contraseña',
-        'apiREST' => 'REST'
+        'apiREST' => 'REST',
+        'consultarParcela' => 'Mantenimiento Parcela'
     ],
     'UK' => [
         'inicioPublico' => 'Public Home',
@@ -101,6 +125,7 @@ $aTitleLang = [
         'tecnologias' => 'Tecnologies',
         'error' => 'Error',
         'cambiarContraseña' => 'Change Password',
-        'apiREST' => 'REST'
+        'apiREST' => 'REST',
+        'consultarParcela' => 'Maintenance Parcela'
     ]
 ];

@@ -43,6 +43,14 @@ if(isset($_REQUEST['apiREST'])){
     exit;
 }
 
+//Si el usuario pulsa el botón 'Mto.Parcela', mando al usuario al index de DWES
+if(isset($_REQUEST['mtoParcela'])){
+    $_SESSION['paginaAnterior'] = 'inicioPrivado'; // Almaceno la página anterior para poder volver
+    $_SESSION['paginaEnCurso'] = 'consultarParcela'; // Asigno a la página en curso la pagina de consultarParcela
+    header('Location: index.php'); // Redirecciono al index de la APP
+    exit;
+}
+
 $descripcionUsuario = $_SESSION['user212DWESLoginLogoutMulticapaPOO']->get_descUsuario(); // Recupero y almaceno la descripción del usuario actual
 $numeroConexionesUsuario = $_SESSION['user212DWESLoginLogoutMulticapaPOO']->get_numAcceso(); // Recupero y almaceno el número de conexiones del usuario actual
 $fechaHoraUltimaConexionAnterior = $_SESSION['user212DWESLoginLogoutMulticapaPOO']->get_fechaHoraUltimaConexionAnterior(); // Recupero y almaceno la fecha y hora de conexión anterior del usuario actual

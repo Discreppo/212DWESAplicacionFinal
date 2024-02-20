@@ -11,6 +11,7 @@
  * 
  */
 class UsuarioPDO implements UsuarioDB {
+
     /**
      * Valida las credenciales de un usuario.
      *
@@ -25,8 +26,8 @@ class UsuarioPDO implements UsuarioDB {
         //CONSULTA SQL - SELECT
         $consulta = <<<CONSULTA
             SELECT * FROM T01_Usuario 
-            WHERE T01_CodUsuario = '{$codUsuario}' 
-            AND T01_Password = SHA2('{$codUsuario}{$password}', 256);
+            WHERE T01_CodUsuario = '$codUsuario' 
+            AND T01_Password = SHA2('$codUsuario$password', 256);
         CONSULTA;
 
         $resultado = DBPDO::ejecutaConsulta($consulta); // Ejecuto la consulta
@@ -35,7 +36,7 @@ class UsuarioPDO implements UsuarioDB {
             $oUsuario = $resultado->fetchObject(); // Guardo en la variable el resultado de la consulta en forma de objeto
 
             if ($oUsuario) { // Instancio un nuevo objeto Usuario con todos sus datos
-               return $oUsuarioNuevo = new Usuario( // Y lo devuelvo
+                return $oUsuarioNuevo = new Usuario(// Y lo devuelvo
                         $oUsuario->T01_CodUsuario,
                         $oUsuario->T01_Password,
                         $oUsuario->T01_DescUsuario,
@@ -63,9 +64,9 @@ class UsuarioPDO implements UsuarioDB {
         //CONSULTA SQL - INSERT
         $consultaCrearUsuario = <<<CONSULTA
             INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario, T01_NumConexiones, T01_FechaHoraUltimaConexion) 
-            VALUES ("{$codUsuario}", SHA2("{$codUsuario}{$password}", 256), "{$descUsuario}", 1, now());
+            VALUES ('$codUsuario', SHA2('$codUsuario$password', 256), '$descUsuario', 1, now());
         CONSULTA;
-            
+
         if (DBPDO::ejecutaConsulta($consultaCrearUsuario)) { // Ejecuto la consulta
             return new Usuario($codUsuario, $password, $descUsuario, 1, date('Y-m-d H:i:s'), null, 'usuario'); // Creo el Usuario con los valores recogidos
         } else {
@@ -85,7 +86,7 @@ class UsuarioPDO implements UsuarioDB {
     public static function modificarUsuario($oUsuario, $descUsuario) {
         //CONSULTA SQL - UPDATE
         $consultaModificarUsuario = <<<CONSULTA
-            UPDATE T01_Usuario SET T01_DescUsuario="{$descUsuario}" WHERE T01_CodUsuario="{$oUsuario->get_CodUsuario()}";
+            UPDATE T01_Usuario SET T01_DescUsuario= '$descUsuario' WHERE T01_CodUsuario='$oUsuario->get_CodUsuario()';
         CONSULTA;
 
         $oUsuario->set_DescUsuario($descUsuario);
@@ -107,7 +108,7 @@ class UsuarioPDO implements UsuarioDB {
     public static function borrarUsuario($codUsuario) {
         //CONSULTA SQL - DELETE
         $consultaEliminarUsuario = <<<CONSULTA
-            DELETE FROM T01_Usuario WHERE T01_CodUsuario = '{$codUsuario}';
+            DELETE FROM T01_Usuario WHERE T01_CodUsuario = '$codUsuario';
         CONSULTA;
         return DBPDO::ejecutaConsulta($consultaEliminarUsuario);
     }
@@ -122,7 +123,7 @@ class UsuarioPDO implements UsuarioDB {
     public static function validarCodNoExiste($codUsuario) {
         //CONSULTA SQL - SELECT
         $consultaExisteUsuario = <<<CONSULTA
-            SELECT T01_CodUsuario FROM T01_Usuario WHERE T01_CodUsuario='{$codUsuario}';
+            SELECT T01_CodUsuario FROM T01_Usuario WHERE T01_CodUsuario= '$codUsuario';
         CONSULTA;
         return DBPDO::ejecutaConsulta($consultaExisteUsuario)->fetchObject();
     }
@@ -147,14 +148,14 @@ class UsuarioPDO implements UsuarioDB {
         $consultaActualizacionFechaUltimaConexion = <<<CONSULTA
             UPDATE T01_Usuario 
             SET T01_NumConexiones=T01_NumConexiones+1, T01_FechaHoraUltimaConexion=now() 
-            WHERE T01_CodUsuario='{$oUsuario->get_CodUsuario()}';
+            WHERE T01_CodUsuario= '$oUsuario->get_CodUsuario()';
         CONSULTA;
 
         DBPDO::ejecutaConsulta($consultaActualizacionFechaUltimaConexion);
 
         return $oUsuario;
     }
-    
+
     /**
      * Metodo cambiarPassword()
      * 
@@ -165,22 +166,22 @@ class UsuarioPDO implements UsuarioDB {
      * 
      * @return boolean Un objeto usuario si el usuario existe y se puede cambiar la password, de lo contrario un boolean a false
      */
-    public static function cambiarPassword($oUsuario, $password){
+    public static function cambiarPassword($oUsuario, $password) {
         //Consulta SQL para modificar la password de un usuario
         $consultaModificarPassword = <<<CONSULTA
-            UPDATE T01_Usuario SET T01_Password=SHA2("{$oUsuario->get_CodUsuario()}{$password}", 256) WHERE T01_CodUsuario="{$oUsuario->get_CodUsuario()}";
+            UPDATE T01_Usuario SET T01_Password=SHA2('$oUsuario->get_CodUsuario()''$password', 256) WHERE T01_CodUsuario='$oUsuario->get_CodUsuario()';
         CONSULTA;
-        
+
         /*
          * La siguente línea de código hago un hash con la nueva contraseña, para que cuando edite la 
          * contraseña del objeto Usuario, no me la guarde en el objeto sin encriptar.
          */
-        $hashPassword = hash("sha256", ($oUsuario->get_CodUsuario() . $password)); 
+        $hashPassword = hash("sha256", ($oUsuario->get_CodUsuario() . $password));
         $oUsuario->set_Password($hashPassword);
-        
-        if(DBPDO::ejecutaConsulta($consultaModificarPassword)){
+
+        if (DBPDO::ejecutaConsulta($consultaModificarPassword)) {
             return $oUsuario;
-        }else{
+        } else {
             return false;
         }
     }

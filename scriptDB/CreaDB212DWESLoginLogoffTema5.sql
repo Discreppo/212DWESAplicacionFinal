@@ -35,6 +35,17 @@ CREATE TABLE T02_Departamento (
     T02_FechaBajaDepartamento DATETIME
 )ENGINE=INNODB;
 
+--Crear la tabla T02_Departamento
+CREATE TABLE T07_Parcela (
+    T07_CodParcela CHAR(3) PRIMARY KEY,
+    T07_DescParcela VARCHAR(255),
+    T07_Superficie FLOAT,    
+    T07_FechaCompra DATETIME DEFAULT CURRENT_TIMESTAMP,    
+    T07_Uso ENUM('Regadío','Secano'),
+    T07_Precio DECIMAL(10, 2),
+    T07_FechaBaja DATETIME
+)ENGINE=INNODB;
+
 --Creación del usuario de la base de datos
 CREATE USER 'user212DWESLoginLogoffTema5'@'%' IDENTIFIED BY 'paso';
 
