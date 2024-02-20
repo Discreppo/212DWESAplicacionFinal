@@ -56,7 +56,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    background: red;
 }
 
 th, td {
@@ -87,6 +88,7 @@ tr:nth-child(odd) {
 .list-group-item:hover {
     color: red;
 }
+
 
 /* FOOTER */
 footer {
