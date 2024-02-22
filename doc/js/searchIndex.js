@@ -1,6 +1,21 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\ESTADO_TODOS",
+            "name": "ESTADO_TODOS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_ESTADO_TODOS"
+        },                {
+            "fqsen": "\\ESTADO_ALTAS",
+            "name": "ESTADO_ALTAS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_ESTADO_ALTAS"
+        },                {
+            "fqsen": "\\ESTADO_BAJAS",
+            "name": "ESTADO_BAJAS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_ESTADO_BAJAS"
+        },                {
             "fqsen": "\\DSN",
             "name": "DSN",
             "summary": "",
@@ -211,6 +226,161 @@ Search.appendIndex(
             "summary": "P\u00E1gina\u0020siguiente,\u0020es\u0020la\u0020p\u00E1gina\u0020anterior\u0020a\u0020mostrar\u0020el\u0020ErrorApp",
             "url": "classes/ErrorApp.html#property_paginaSiguiente"
         },                {
+            "fqsen": "\\Parcela",
+            "name": "Parcela",
+            "summary": "Clase\u0020que\u0020crea\u0020y\u0020utiliza\u0020parcelas\u0020en\u0020la\u0020aplicacion",
+            "url": "classes/Parcela.html"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor\u0020de\u0020la\u0020clase\u0020Parcela",
+            "url": "classes/Parcela.html#method___construct"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetCodParcela\u0028\u0029",
+            "name": "getCodParcela",
+            "summary": "Obtiene\u0020el\u0020c\u00F3digo\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getCodParcela"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetDescParcela\u0028\u0029",
+            "name": "getDescParcela",
+            "summary": "Obtiene\u0020la\u0020descripci\u00F3n\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getDescParcela"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetSuperficie\u0028\u0029",
+            "name": "getSuperficie",
+            "summary": "Obtiene\u0020la\u0020superficie\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getSuperficie"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetFechaCompra\u0028\u0029",
+            "name": "getFechaCompra",
+            "summary": "Obtiene\u0020la\u0020fecha\u0020y\u0020hora\u0020de\u0020la\u0020compra\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getFechaCompra"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetUso\u0028\u0029",
+            "name": "getUso",
+            "summary": "Obtiene\u0020el\u0020uso\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getUso"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetPrecio\u0028\u0029",
+            "name": "getPrecio",
+            "summary": "Obtiene\u0020el\u0020precio\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getPrecio"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AgetFechaBaja\u0028\u0029",
+            "name": "getFechaBaja",
+            "summary": "Obtiene\u0020la\u0020fecha\u0020de\u0020baja\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_getFechaBaja"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetCodParcela\u0028\u0029",
+            "name": "setCodParcela",
+            "summary": "Establece\u0020el\u0020c\u00F3digo\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setCodParcela"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetDescParcela\u0028\u0029",
+            "name": "setDescParcela",
+            "summary": "Establece\u0020la\u0020descripci\u00F3n\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setDescParcela"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetSuperficie\u0028\u0029",
+            "name": "setSuperficie",
+            "summary": "Establece\u0020la\u0020superficie\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setSuperficie"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetFechaCompra\u0028\u0029",
+            "name": "setFechaCompra",
+            "summary": "Establece\u0020la\u0020fecha\u0020y\u0020hora\u0020de\u0020la\u0020compra\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setFechaCompra"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetUso\u0028\u0029",
+            "name": "setUso",
+            "summary": "Establece\u0020el\u0020uso\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setUso"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetPrecio\u0028\u0029",
+            "name": "setPrecio",
+            "summary": "Establece\u0020el\u0020precio\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setPrecio"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003AsetFechaBaja\u0028\u0029",
+            "name": "setFechaBaja",
+            "summary": "Establece\u0020la\u0020fecha\u0020de\u0020baja\u0020de\u0020la\u0020parcela.",
+            "url": "classes/Parcela.html#method_setFechaBaja"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024codParcela",
+            "name": "codParcela",
+            "summary": "Codigo\u0020del\u0020Parcela",
+            "url": "classes/Parcela.html#property_codParcela"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024descParcela",
+            "name": "descParcela",
+            "summary": "Descripci\u00F3n\u0020del\u0020Parcela",
+            "url": "classes/Parcela.html#property_descParcela"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024superficie",
+            "name": "superficie",
+            "summary": "Superficie\u0020de\u0020la\u0020Parcela",
+            "url": "classes/Parcela.html#property_superficie"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024fechaCompra",
+            "name": "fechaCompra",
+            "summary": "Fecha\u0020y\u0020hora\u0020de\u0020la\u0020compra\u0020de\u0020la\u0020Parcela",
+            "url": "classes/Parcela.html#property_fechaCompra"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024uso",
+            "name": "uso",
+            "summary": "Uso\u0020de\u0020la\u0020Parcela",
+            "url": "classes/Parcela.html#property_uso"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024precio",
+            "name": "precio",
+            "summary": "Precio\u0020de\u0020la\u0020Parcela",
+            "url": "classes/Parcela.html#property_precio"
+        },                {
+            "fqsen": "\\Parcela\u003A\u003A\u0024fechaBaja",
+            "name": "fechaBaja",
+            "summary": "Fecha\u0020de\u0020baja\u0020de\u0020la\u0020Parcela",
+            "url": "classes/Parcela.html#property_fechaBaja"
+        },                {
+            "fqsen": "\\ParcelaPDO",
+            "name": "ParcelaPDO",
+            "summary": "",
+            "url": "classes/ParcelaPDO.html"
+        },                {
+            "fqsen": "\\ParcelaPDO\u003A\u003AbuscaParcelasPorDesc\u0028\u0029",
+            "name": "buscaParcelasPorDesc",
+            "summary": "Busca\u0020parcelas\u0020por\u0020su\u0020descripci\u00F3n.",
+            "url": "classes/ParcelaPDO.html#method_buscaParcelasPorDesc"
+        },                {
+            "fqsen": "\\ParcelaPDO\u003A\u003AbuscarParcelaPorCod\u0028\u0029",
+            "name": "buscarParcelaPorCod",
+            "summary": "Metodo\u0020que\u0020nos\u0020permite\u0020buscar\u0020una\u0020Parcela\u0020por\u0020el\u0020c\u00F3digo",
+            "url": "classes/ParcelaPDO.html#method_buscarParcelaPorCod"
+        },                {
+            "fqsen": "\\ParcelaPDO\u003A\u003AmodificarParcela\u0028\u0029",
+            "name": "modificarParcela",
+            "summary": "Modifica\u0020los\u0020valores\u0020de\u0020una\u0020Parcela",
+            "url": "classes/ParcelaPDO.html#method_modificarParcela"
+        },                {
+            "fqsen": "\\REST",
+            "name": "REST",
+            "summary": "",
+            "url": "classes/REST.html"
+        },                {
+            "fqsen": "\\REST\u003A\u003AapiNasa\u0028\u0029",
+            "name": "apiNasa",
+            "summary": "Obtenemos\u0020la\u0020imagen\u0020de\u0020la\u0020API\u0020de\u0020la\u0020NASA.",
+            "url": "classes/REST.html#method_apiNasa"
+        },                {
+            "fqsen": "\\REST\u003A\u003Anasa\u0028\u0029",
+            "name": "nasa",
+            "summary": "",
+            "url": "classes/REST.html#method_nasa"
+        },                {
+            "fqsen": "\\REST\u003A\u003Anegocio\u0028\u0029",
+            "name": "negocio",
+            "summary": "",
+            "url": "classes/REST.html#method_negocio"
+        },                {
             "fqsen": "\\Usuario",
             "name": "Usuario",
             "summary": "",
@@ -333,7 +503,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\UsuarioPDO",
             "name": "UsuarioPDO",
-            "summary": "",
+            "summary": "Clase\u0020de\u0020acceso\u0020a\u0020datos\u0020de\u0020los\u0020usuarios",
             "url": "classes/UsuarioPDO.html"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AvalidarUsuario\u0028\u0029",

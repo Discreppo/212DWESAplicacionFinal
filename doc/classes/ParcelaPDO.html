@@ -85,15 +85,39 @@
             <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -file">
-        <h2 class="phpdocumentor-content__title">confAPP.php</h2>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    ParcelaPDO
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="model/ParcelaPDO.php"><a href="files/model-parcelapdo.html"><abbr title="model/ParcelaPDO.php">ParcelaPDO.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+
+    </aside>
 
         
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="files/config-confapp.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/ParcelaPDO.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -127,35 +151,26 @@
                     <span class="phpdocumentor-tag__name">since</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">15/01/2024</span>
+                                            <span class="phpdocumentor-tag-link">14/02/2024</span>
                                                                                 
                                              
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">copyright</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Todos los derechos reservados a Carlos García</p>
-</section>
-
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">Annotation</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>Proyecto LoginLogoutMulticapaPOO - Parte de configuración</p>
+                                                 <section class="phpdocumentor-description"><p>Proyecto AplicacionFinal - Clase ParcelaPDO</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="files/config-confapp.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/ParcelaPDO.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -165,137 +180,232 @@
 
 
 
-<h4 id="toc-constants">
-    Constants
-    <a href="files/config-confapp.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/ParcelaPDO.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="namespaces/default.html#constant_ESTADO_ALTAS">ESTADO_ALTAS</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ParcelaPDO.html#method_buscaParcelasPorDesc">buscaParcelasPorDesc()</a>
     <span>
-        &nbsp;= 1                            </span>
+                                &nbsp;: mixed    </span>
 </dt>
+<dd>Busca parcelas por su descripción.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="namespaces/default.html#constant_ESTADO_BAJAS">ESTADO_BAJAS</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ParcelaPDO.html#method_buscarParcelaPorCod">buscarParcelaPorCod()</a>
     <span>
-        &nbsp;= 2                            </span>
+                                &nbsp;: object    </span>
 </dt>
+<dd>Metodo que nos permite buscar una Parcela por el código</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="namespaces/default.html#constant_ESTADO_TODOS">ESTADO_TODOS</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ParcelaPDO.html#method_modificarParcela">modificarParcela()</a>
     <span>
-        &nbsp;= 0                            </span>
+                                &nbsp;: <abbr title="\PDOStatment">PDOStatment</abbr>    </span>
 </dt>
+<dd>Modifica los valores de una Parcela</dd>
 
     </dl>
 
 
 
 
-
-
+        
 
         
-    <section class="phpdocumentor-constants">
-        <h3 class="phpdocumentor-elements__header" id="constants">
-            Constants
-            <a href="files/config-confapp.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/ParcelaPDO.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ESTADO_ALTAS">
-        ESTADO_ALTAS
-        <a href="namespaces/default.html#constant_ESTADO_ALTAS" class="headerlink"><i class="fas fa-link"></i></a>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_buscaParcelasPorDesc">
+        buscaParcelasPorDesc()
+        <a href="classes/ParcelaPDO.html#method_buscaParcelasPorDesc" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
-
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="config/confAPP.php"><a href="files/config-confapp.html"><abbr title="config/confAPP.php">confAPP.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/ParcelaPDO.php"><a href="files/model-parcelapdo.html"><abbr title="model/ParcelaPDO.php">ParcelaPDO.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
+        <p class="phpdocumentor-summary">Busca parcelas por su descripción.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">ESTADO_ALTAS</span>
-    = <span class="phpdocumentor-signature__default-value">1</span>
-</code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">buscaParcelasPorDesc</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$descParcela</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$descParcela</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Descripción de la Parcela a buscar.</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-    
-    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$aParcelas Array con todas las parcelas encontradas.</p>
+</section>
+
+            </section>
 
 </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ESTADO_BAJAS">
-        ESTADO_BAJAS
-        <a href="namespaces/default.html#constant_ESTADO_BAJAS" class="headerlink"><i class="fas fa-link"></i></a>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_buscarParcelaPorCod">
+        buscarParcelaPorCod()
+        <a href="classes/ParcelaPDO.html#method_buscarParcelaPorCod" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
-
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="config/confAPP.php"><a href="files/config-confapp.html"><abbr title="config/confAPP.php">confAPP.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/ParcelaPDO.php"><a href="files/model-parcelapdo.html"><abbr title="model/ParcelaPDO.php">ParcelaPDO.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
+        <p class="phpdocumentor-summary">Metodo que nos permite buscar una Parcela por el código</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">ESTADO_BAJAS</span>
-    = <span class="phpdocumentor-signature__default-value">2</span>
-</code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">buscarParcelaPorCod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codParcela</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$codParcela</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>El código de la Parcela</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-    
-    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Parcela | false Devuelve el objeto o 'false' si a ocurrido algún error</p>
+</section>
+
+            </section>
 
 </article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ESTADO_TODOS">
-        ESTADO_TODOS
-        <a href="namespaces/default.html#constant_ESTADO_TODOS" class="headerlink"><i class="fas fa-link"></i></a>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_modificarParcela">
+        modificarParcela()
+        <a href="classes/ParcelaPDO.html#method_modificarParcela" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
-
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="config/confAPP.php"><a href="files/config-confapp.html"><abbr title="config/confAPP.php">confAPP.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/ParcelaPDO.php"><a href="files/model-parcelapdo.html"><abbr title="model/ParcelaPDO.php">ParcelaPDO.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
+        <p class="phpdocumentor-summary">Modifica los valores de una Parcela</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">ESTADO_TODOS</span>
-    = <span class="phpdocumentor-signature__default-value">0</span>
-</code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">modificarParcela</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codParcela</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$descParcela</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precioParcela</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\PDOStatment">PDOStatment</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$codParcela</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Codigo de la Parcela a editar</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$descParcela</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Descripción de la Parcela a editar</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$precioParcela</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Precio de la Parcela a editar</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-    
-    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\PDOStatment">PDOStatment</abbr></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>| false Devuelve el resultado de la consulta o 'false' si a ocurrido algún error</p>
+</section>
+
+            </section>
 
 </article>
             </section>
 
-        
         <div class="phpdocumentor-modal" id="source-view">
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/config/confAPP.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/model/ParcelaPDO.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -386,7 +496,7 @@
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
-                            
+                                
     <section class="phpdocumentor-on-this-page__content">
         <strong class="phpdocumentor-on-this-page__title">On this page</strong>
 
@@ -394,19 +504,19 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                                                                                                    <li><a href="files/config-confapp.html#toc-constants">Constants</a></li>
-                                                        </ul>
+                                                                                <li><a href="classes/ParcelaPDO.html#toc-methods">Methods</a></li>
+                                    </ul>
             </li>
-
-                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="namespaces/default.html#constant_ESTADO_ALTAS">ESTADO_ALTAS</a></li>
-                                                    <li><a href="namespaces/default.html#constant_ESTADO_BAJAS">ESTADO_BAJAS</a></li>
-                                                    <li><a href="namespaces/default.html#constant_ESTADO_TODOS">ESTADO_TODOS</a></li>
-                                            </ul>
-                </li>
             
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/ParcelaPDO.html#method_buscaParcelasPorDesc">buscaParcelasPorDesc()</a></li>
+                                            <li><a href="classes/ParcelaPDO.html#method_buscarParcelaPorCod">buscarParcelaPorCod()</a></li>
+                                            <li><a href="classes/ParcelaPDO.html#method_modificarParcela">modificarParcela()</a></li>
+                                    </ul>
+            </li>
                     </ul>
     </section>
 
@@ -424,7 +534,7 @@
     </section>
 </section>
         </div>
-        <a href="files/config-confapp.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/ParcelaPDO.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -1,6 +1,13 @@
 <?php
+/**
+ * Class Parcela
+ * 
+ * 
+ */
 
 /**
+ * Clase que crea y utiliza parcelas en la aplicacion
+ * 
  * @author Oscar Pascual Ferrero
  * @version 1.0
  * @since 14/02/2024
