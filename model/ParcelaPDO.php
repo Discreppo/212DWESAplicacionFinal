@@ -58,8 +58,8 @@ class ParcelaPDO {
     public static function buscarParcelaPorCod($codParcela) {
         //CONSULTA SQL - SELECT
         $consulta = <<<CONSULTA
-            SELECT * FROM T06_Parcela 
-            WHERE T06_CodParcela = '$codParcela';
+            SELECT * FROM T07_Parcela 
+            WHERE T07_CodParcela = '$codParcela';
         CONSULTA;
 
         $resultado = DBPDO::ejecutaConsulta($consulta); // Ejecuto la consulta
@@ -83,5 +83,27 @@ class ParcelaPDO {
             return false; // En caso de fallar devuelvo false
         }
     }
+    
+    /**
+     * Modifica los valores de una Parcela
+     *
+     * @param string $codParcela Codigo de la Parcela a editar
+     * @param string $descParcela Descripción de la Parcela a editar
+     * @param float $precioParcela Precio de la Parcela a editar
+     * 
+     * @return PDOStatment | false Devuelve el resultado de la consulta o 'false' si a ocurrido algún error
+     */
+    public static function modificarParcela($codParcela, $descParcela, $precioParcela) {
+        // Consulta de busqueda según el valor del parametro introducido
+        $consulta = <<<CONSULTA
+            UPDATE T06_Parcela SET 
+            T06_DescParcela = '$descParcela',
+            T06_Precio = '$precioParcela'
+            WHERE T06_CodParcela = '$codParcela';
+        CONSULTA;
+
+        return DBPDO::ejecutaConsulta($consulta); // Ejecutamos y devolvemos la consulta
+    }
+    
     
 }

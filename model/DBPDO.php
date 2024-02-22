@@ -33,8 +33,8 @@ class DBPDO implements DB {
              * En la variable '$_SESSION['paginaAnterior']' almacenamos la página anterior para poder volver una vez visualicemos el error en 'vError.php'
              */
             $_SESSION['error'] = new ErrorApp($excepcion->getCode(), $excepcion->getMessage(), $excepcion->getFile(), $excepcion->getLine(), $_SESSION['paginaAnterior']);
-            header('Location: indexLoginLogoutMulticapaPOO.php'); // Redirecciono al index de la APP
-            exit;
+            header('Location: index.php'); // Redirecciono al index de la APP
+            //exit;
         } finally{
             unset($miDB); // Cierro la conexión con la BD
         }

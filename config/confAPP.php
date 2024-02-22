@@ -111,7 +111,11 @@ $aTitleLang = [
         'error' => 'Error',
         'cambiarContraseña' => 'Cambiar Contraseña',
         'apiREST' => 'REST',
-        'consultarParcela' => 'Mantenimiento Parcela'
+        'consultarParcela' => 'Mantenimiento Parcela',
+        'detalleParcela' => 'Detalles de la parcela',
+        'editarParcela' => 'Editar Parcela',
+        'añadirParcela' => 'Añadir Parcela',
+        'eliminarParcela' => 'Eliminar Parcela'
     ],
     'UK' => [
         'inicioPublico' => 'Public Home',
@@ -126,6 +130,10 @@ $aTitleLang = [
         'error' => 'Error',
         'cambiarContraseña' => 'Change Password',
         'apiREST' => 'REST',
-        'consultarParcela' => 'Maintenance Parcela'
+        'consultarParcela' => 'Maintenance Parcela',
+        'detalleParcela' => 'Parcela details',
+        'editarParcela' => 'Edit Parcela',
+        'añadirParcela' => 'Add Parcela',
+        'eliminarParcela' => 'Delete Parcela'
     ]
 ];

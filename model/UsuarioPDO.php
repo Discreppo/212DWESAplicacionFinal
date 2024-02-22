@@ -1,6 +1,16 @@
 <?php
-
 /**
+ * Class UsuarioPDO
+ * 
+ * Esta clase se utiliza para realizar operaciones contra la base de datos sobre los usuariosDB.
+ * 
+ * 
+ *  /
+ */
+/**
+ * Clase de acceso a datos de los usuarios
+ *  
+ * 
  * @author original Carlos García Cachón
  * @author Oscar Pascual Ferrero
  * @version 1.0
@@ -8,6 +18,7 @@
  * @copyright Todos los derechos reservados a Carlos García
  * 
  * @Annotation Proyecto LoginLogoutMulticapaPOO - Clase UsuarioPDO
+ * 
  * 
  */
 class UsuarioPDO implements UsuarioDB {

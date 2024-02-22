@@ -9,7 +9,7 @@
 
 //Si el usuario pulsa el botón 'Salir', mando al usuario al index de DWES
 if(isset($_REQUEST['salirDetalle'])){ 
-    $_SESSION['paginaEnCurso'] = 'inicioPrivado'; // Asigno a la página en curso la pagina de inicioPrivado
+    $_SESSION['paginaEnCurso'] = 'consultarParcela'; // Asigno a la página en curso la pagina de inicioPrivado
     header('Location: index.php'); // Redirecciono al index de la APP
     exit;
 }

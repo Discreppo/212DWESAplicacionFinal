@@ -14,6 +14,16 @@
 if (isset($_REQUEST['salirParcela'])) {
     $_SESSION['paginaAnterior'] = 'consultarParcela'; // Almaceno la página anterior para poder volver
     $_SESSION['paginaEnCurso'] = 'inicioPrivado'; // Asigno a la página en curso la pagina de inicioPrivado
+    $_SESSION['criterioBusquedaParcela']['descripcionBuscada'] = '';
+    header('Location: index.php'); // Redirecciono al index de la APP
+    exit;
+}
+
+// Estructura del botón editarDepartamento, si el usuario pulsa el botón del icono de un 'lapiz'
+if (isset($_REQUEST['cConsultarModificarParcela'])) {
+    $_SESSION['codParcelaActual'] = $_REQUEST['cConsultarModificarParcela']; // Almaceno en una variable de sesión el Codigo del Parcela Seleccionada
+    $_SESSION['paginaAnterior'] = 'consultarParcela'; // Almaceno la página anterior para poder volver
+    $_SESSION['paginaEnCurso'] = 'editarParcela'; // Asigno a la página en curso la pagina de ConsultarModificarParcela
     header('Location: index.php'); // Redirecciono al index de la APP
     exit;
 }
