@@ -52,6 +52,41 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
      * @return null|string Devuelve null si es correcto o un mensaje de error en caso de que lo haya.
      */
 
+    public static function comprobarFloatMejorado($float, $max = PHP_FLOAT_MAX, $min = -PHP_FLOAT_MAX, $maxDecimales = PHP_FLOAT_DIG, $minDecimales = -PHP_FLOAT_DIG, $obligatorio = 0) {
+        $mensajeError = null;
+
+        if ($obligatorio == 1 && $float != '0') {
+            $mensajeError = self::comprobarNoVacio($float);
+        }
+
+        if (($obligatorio == 0 && $float != null) || ($obligatorio == 1 && empty($mensajeError))) {
+            if (!is_numeric($float)) {
+                $mensajeError = "El campo no es un decimal. (Debe llevar punto(.) entre la parte entera y la parte decimal)";
+            } else {
+                $partes = explode('.', $float);
+
+                // Verificar el número total de decimales
+                $totalDecimales = isset($partes[1]) ? strlen($partes[1]) : 0;
+
+                if ($totalDecimales > $maxDecimales) {
+                    $mensajeError = "El número no puede tener más de $maxDecimales decimales.";
+                } elseif ($totalDecimales < $minDecimales) {
+                    $mensajeError = "El número no puede tener menos de $minDecimales decimales.";
+                } else {
+                    // Verificar rango y número de decimales
+                    if ($float > $max) {
+                        $mensajeError .= "El número no puede ser mayor que $max.";
+                    }
+                    if ($float < $min) {
+                        $mensajeError .= "El número no puede ser menor que $min.";
+                    }
+                }
+            }
+        }
+
+        return $mensajeError;
+    }
+    
     public static function comprobarAlfabetico($cadena, $maxTamanio = 1000, $minTamanio = 1, $obligatorio = 0) {  //AÑADIDOS VALORES POR DEFECTO Y MEJORADA LA RESPUESTA
         // Patrón para campos de solo texto
         $patron_texto = "/^[a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ\s]+$/";

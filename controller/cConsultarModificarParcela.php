@@ -39,8 +39,8 @@ if ($oParcelaAEditar) {
 }
 
 if (isset($_REQUEST['confirmarCambiosEditar'])) { // Comprobamos que el usuario haya enviado el formulario para 'confirmar los cambios'
-    $aErrores['DescripParcela'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['DescripParcela'], 255, 3, 1);
-    $aErrores['Precio'] = validacionFormularios::comprobarFloatMejorado($_REQUEST['Precio'], 9999999999, 0, 2, 2, 1);
+    $aErrores['descParcelaAEditar'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['descParcelaAEditar'], 255, 3, 1);
+    $aErrores['precioAEditar'] = validacionFormularios::comprobarFloatMejorado($_REQUEST['precioAEditar'], 9999999999, 0, 2, 2, 1);
 
 // Recorremos el array de errores
     foreach ($aErrores as $campo => $error) {
@@ -56,7 +56,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente
     // Usando el metodo 'modificarParcela' de la clase 'ParcelaPDO' para modificar el Parcela
     ParcelaPDO::modificarParcela($_SESSION['codParcelaActual'],$_REQUEST['DescripParcela'],$_REQUEST['Precio']);
     $_SESSION['paginaAnterior'] = 'editarParcela'; // Almaceno la página anterior para poder volver
-    $_SESSION['paginaEnCurso'] = 'consultarParcelaes'; // Asigno a la página en curso la pagina de consultarDepartamento
+    $_SESSION['paginaEnCurso'] = 'consultarParcela'; // Asigno a la página en curso la pagina de consultarDepartamento
     header('Location: index.php'); // Redirecciono al index de la APP
     exit;
 }
