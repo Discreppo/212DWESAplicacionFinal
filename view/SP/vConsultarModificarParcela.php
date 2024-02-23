@@ -12,11 +12,7 @@
     }
 </style>
 <div class="row d-flex justify-content-start">
-    <div class="col">
-        <form name="detalle" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-            <button class="btn btn-secondary" aria-disabled="true" type="submit" name="salirDetalle">Salir</button>
-        </form>        
-    </div>
+    
     <div class="col">
         <form name="editarDepartamento" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <fieldset>
@@ -24,88 +20,87 @@
                     <tbody>
                         <tr>
                             <td class="d-flex justify-content-start">
-                                <label for="codParcelaAMostrar">Código de Referencia:</label>
+                                <label for="codParcelaAEditar">Código de Referencia:</label>
                             </td>
                             <td>
-                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="codParcelaAMostrar"
-                                       value="<?php echo ($codParcelaAMostrar); ?>" disabled>
+                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="codParcelaAEditar"
+                                       value="<?php echo ($codParcelaAEditar); ?>" disabled>
                             </td>
                             <td class="error">
                             </td>
                         </tr>
                         <tr>
                             <td class="d-flex justify-content-start">
-                                <label for="descParcelaAMostrar">Descripción de la Parcela:</label>
+                                <label for="descParcelaAEditar">Descripción de la Parcela:</label>
                             </td>
                             <td>
-                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="descParcelaAMostrar"
-                                       value="<?php echo ($descParcelaAMostrar); ?>" disabled>
+                                <input class="d-flex justify-content-start obligatorio modDep" type="text" name="descParcelaAEditar" value="<?php echo (isset($_REQUEST['descParcelaAEditar']) ? $_REQUEST['descParcelaAEditar'] : $descParcelaAEditar ); ?>">
+                                
+                            </td>
+                            <td class="error">
+                                <?php
+                                if (!empty($aErrores['descParcelaAEditar'])) {
+                                    echo $aErrores['descParcelaAEditar'];
+                                }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex justify-content-start">
+                                <label for="superficieAEditar">superficie :</label>
+                            </td>
+                            <td>
+                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="superficieAEditar"
+                                       value="<?php echo ($superficieAEditar); ?>" disabled>
                             </td>
                             <td class="error">
                             </td>
                         </tr>
                         <tr>
                             <td class="d-flex justify-content-start">
-                                <label for="fechaNacimientoAMostrar">Fecha de Nacimiento:</label>
+                                <label for="fechaCompraAEditar">fecha compra:</label>
                             </td>
                             <td>
-                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="superficieAMostrar"
-                                       value="<?php echo ($superficieAMostrar); ?>" disabled>
+                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="fechaCompraAEditar"
+                                       value="<?php echo ($fechaCompraAEditar); ?>" disabled>
                             </td>
                             <td class="error">
                             </td>
                         </tr>
                         <tr>
                             <td class="d-flex justify-content-start">
-                                <label for="sexoAMostrar">Sexo:</label>
+                                <label for="usoAEditar">Uso:</label>
                             </td>
                             <td>
-                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="fechaCompraAMostrar"
-                                       value="<?php echo ($fechaCompraAMostrar); ?>" disabled>
+                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="usoAEditar"
+                                       value="<?php echo ($usoAEditar); ?>" disabled>
                             </td>
                             <td class="error">
                             </td>
                         </tr>
                         <tr>
                             <td class="d-flex justify-content-start">
-                                <label for="razaAMostrar">Raza:</label>
+                                <label for="precioAEditar">Precio:</label>
                             </td>
                             <td>
-                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="usoAMostrar"
-                                       value="<?php echo ($usoAMostrar); ?>" disabled>
+                                <input class="obligatorio d-flex justify-content-start modDep" type="text" name="precioAEditar" value="<?php echo (isset($_REQUEST['precioAEditar']) ? $_REQUEST['precioAEditar'] : $precioAEditar); ?>">
+                                
                             </td>
                             <td class="error">
+                                <?php
+                                if (!empty($aErrores['precioAEditar'])) {
+                                    echo $aErrores['precioAEditar'];
+                                }
+                                ?>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="d-flex justify-content-start">
-                                <label for="precioAMostrar">Precio:</label>
-                            </td>
-                            <td>
-                                <input class="bloqueado d-flex justify-content-start modDep" type="text" name="precioAMostrar"
-                                       value="<?php echo ($precioAMostrar); ?>" disabled>
-                            </td>
-                            <td class="error">
-                            </td>
-                        </tr>
-                        <?php
-                        if (!is_null($fechaBajaAMostrar)) {
-                            echo ("<tr>
-                                        <!-- Fecha Baja Parcela Deshabilitado -->
-                                        <td class=\"d-flex justify-content-start modDep\">
-                                            <label for=\"fechaBajaDepartamentoAMostrar\">Fecha de Baja:</label>
-                                        </td>
-                                        <td>
-                                            <input class=\"bloqueado d-flex justify-content-start\" type=\"text\" name=\"fechaBajaParcelaAMostrar\"
-                                                   value=\"$fechaBajaAMostrar\" disabled>
-                                        </td>
-                                        <td class=\"error\">
-                                        </td>
-                                    </tr>");
-                        }
-                        ?>
+                        
                     </tbody>
-                </table>                
+                </table> 
+                <div class="text-center">
+                        <button class="btn btn-secondary" aria-disabled="true" type="submit" name="confirmarCambiosEditar">Confirmar Cambios</button>
+                        <button class="btn btn-secondary" aria-disabled="true" type="submit" name="cancelarEditar">Cancelar</button>
+                    </div>
             </fieldset>
         </form>
     </div>
